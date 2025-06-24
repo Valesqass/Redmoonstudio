@@ -13,7 +13,7 @@ function Hero() {
     const [isCallButtonHovered, setIsCallButtonHovered] = useState(false);
     const [showContactModal, setShowContactModal] = useState(false);
     const [copied, setCopied] = useState(false);
-
+    
     const handleCallClick = () => {
         setShowContactModal(true);
     };
