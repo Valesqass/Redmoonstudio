@@ -1,12 +1,50 @@
-# React + Vite
+# 🌙 Redmoon Studio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> **Studio de mixage audio professionnel** - Transformez vos sons en œuvres d'art 🎵✨
 
-Currently, two official plugins are available:
+## 🎯 À propos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Redmoon Studio est une plateforme web innovante dédiée au **mixage audio professionnel** pour nos clients. Notre studio virtuel combine technologie de pointe et créativité pour offrir une expérience de mixage unique et immersive.
 
-## Expanding the ESLint configuration
+## ✨ Fonctionnalités
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🎚️ **Mixage Audio Avancé**
+- Interface de mixage intuitive et professionnelle
+- Effets audio en temps réel
+- Égaliseur multi-bandes
+- Compression et mastering automatique
+
+### 🎨 **Expérience Visuelle**
+- **Animations fluides** et réactives au son
+- **Galerie photo** intégrée pour vos projets
+- **Palette de couleurs** dynamique
+- **Emojis interactifs** 🎵 🎤 🎧 🔥
+
+### 🚀 **Interface Moderne**
+- Design responsive et élégant
+- Visualisations audio en temps réel
+- Thème sombre/clair adaptatif
+- Contrôles gestuels avancés
+
+## 🛠️ Technologies
+
+- **Frontend**: React 18 + Vite
+- **Styling**: Tailwind CSS
+- **Audio**: Web Audio API
+- **Animations**: Framer Motion
+- **Build**: Vite + ESLint
+
+## 🚀 Installation
+
+```bash
+# Cloner le projet
+git clone https://github.com/redmoon-studio/redmoon-studio.git
+
+# Installer les dépendances
+npm install
+
+# Lancer en mode développement
+npm run dev
+
+# Build pour la production
+npm run build
