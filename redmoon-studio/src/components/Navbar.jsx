@@ -24,20 +24,19 @@ export default function Navbar() {
     return (
         <>
             {/* Navbar principale */}
-            <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 font-inter ${
-                isScrolled 
-                    ? 'bg-black/95 backdrop-blur-md border-b border-gray-800/50 shadow-lg' 
-                    : 'bg-black/80 backdrop-blur-sm'
-            }`}>
+            <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 font-inter ${isScrolled
+                ? 'bg-black/95 backdrop-blur-md border-b border-gray-800/50 shadow-lg'
+                : 'bg-black/80 backdrop-blur-sm'
+                }`}>
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex justify-between items-center h-16 lg:h-20">
-                        
+
                         {/* Logo - Centré sur mobile */}
                         <div className="flex-shrink-0 flex justify-center lg:justify-start w-full lg:w-auto">
-                            <img 
-                                src={Logo} 
-                                alt="Rec Yourself" 
-                                className="h-12 lg:h-16 w-auto object-contain transition-transform duration-300 hover:scale-105"
+                            <img
+                                src={Logo}
+                                alt="Rec Yourself"
+                                className="h-16 sm:h-20 lg:h-24 w-auto object-contain transition-all duration-300 hover:scale-105 drop-shadow-lg"
                             />
                         </div>
 
@@ -94,7 +93,7 @@ export default function Navbar() {
                         </div>
 
                         {/* Bouton Menu Mobile */}
-                        <button 
+                        <button
                             onClick={toggleMenu}
                             className="lg:hidden absolute right-4 top-1/2 transform -translate-y-1/2 p-2 rounded-lg text-gray-300 hover:text-white hover:bg-gray-800/50 transition-all duration-200"
                         >
@@ -104,9 +103,8 @@ export default function Navbar() {
                 </div>
 
                 {/* Menu Mobile */}
-                <div className={`lg:hidden transition-all duration-300 ease-in-out overflow-hidden ${
-                    isMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
-                }`}>
+                <div className={`lg:hidden transition-all duration-300 ease-in-out overflow-hidden ${isMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
+                    }`}>
                     <div className="bg-black/95 backdrop-blur-md border-t border-gray-800/50">
                         <div className="px-4 py-6 space-y-4">
                             {/* Navigation Links */}
