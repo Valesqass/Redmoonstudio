@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+import ConfigurationSlide from './ConfigurationSlide';
 import { FiPhoneCall, FiX, FiMessageCircle, FiCopy, FiCheck } from 'react-icons/fi';
 import VocalMix from '../assets/img/hero.png';
 import Truspilot from '../assets/img/truspilot.png';
@@ -13,6 +14,7 @@ function Hero() {
     const [isCallButtonHovered, setIsCallButtonHovered] = useState(false);
     const [showContactModal, setShowContactModal] = useState(false);
     const [copied, setCopied] = useState(false);
+    const [isConfigSlideOpen, setIsConfigSlideOpen] = useState(false);
 
     const handleCallClick = () => {
         setShowContactModal(true);
@@ -100,9 +102,12 @@ function Hero() {
                         ))}
                     </div>
 
-                    {/* Bouton Principal */}
+                    {/* Bouton Principal - modifié */}
                     <div className="flex justify-center w-full mb-4">
-                        <button className="bg-red-500 text-white font-bold text-base sm:text-lg rounded-lg py-3 sm:py-4 w-full max-w-md lg:max-w-lg shadow-lg transition-all duration-300 ease-out tracking-wide transform hover:scale-105 hover:-translate-y-1 hover:shadow-[0_8px_32px_0_rgba(255,75,110,0.35),0_2px_8px_rgba(255,110,75,0.15)] focus:outline-none">
+                        <button
+                            onClick={() => setIsConfigSlideOpen(true)}
+                            className="bg-red-500 text-white font-bold text-base sm:text-lg rounded-lg py-3 sm:py-4 w-full max-w-md lg:max-w-lg shadow-lg transition-all duration-300 ease-out tracking-wide transform hover:scale-105 hover:-translate-y-1 hover:shadow-[0_8px_32px_0_rgba(255,75,110,0.35),0_2px_8px_rgba(255,110,75,0.15)] focus:outline-none"
+                        >
                             Configurer mon Kit <span className="font-extrabold">→</span>
                         </button>
                     </div>
@@ -260,6 +265,12 @@ function Hero() {
                     </div>
                 </div>
             )}
+
+            {/* Configuration Slide - maintenant correctement placé dans le return */}
+            <ConfigurationSlide
+                isOpen={isConfigSlideOpen}
+                onClose={() => setIsConfigSlideOpen(false)}
+            />
         </div>
     );
 }

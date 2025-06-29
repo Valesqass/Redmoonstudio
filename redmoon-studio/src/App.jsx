@@ -11,7 +11,6 @@ function App() {
       <Navbar />
       <div>
         <Hero />
-        {/* Vocalmix positionné à droite sur desktop, centré sur mobile */}
         <div className="flex justify-center lg:justify-end lg:pr-20 -mt-8 bg-[#121212] px-4 lg:px-0">
           <div className="w-full max-w-md sm:max-w-lg lg:max-w-2xl lg:mr-44">
             <Vocalmix />
