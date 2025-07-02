@@ -76,7 +76,7 @@ function CustomerReviews() {
             <div className="container mx-auto px-4 relative z-10">
                 <div className="text-center mb-12">
                     <div className="inline-flex items-center gap-3 bg-gradient-to-r from-red-600/30 to-pink-600/30 backdrop-blur-md border border-red-600/40 rounded-full px-5 py-1.5 mb-5">
-                        <span className="text-red-500 font-extrabold tracking-wide uppercase text-xs">TÉMOIGNAGES CLIENTS</span>
+                        <span className="text-red-500 font-extrabold tracking-wide uppercase text-xs">LES RETOURS VIDEOS DE NOS CLIENTS</span>
                     </div>
 
                     <h2 className="text-2xl md:text-3xl font-extrabold text-white mb-4 leading-tight">

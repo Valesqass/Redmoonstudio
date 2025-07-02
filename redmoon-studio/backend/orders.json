@@ -1,0 +1,32 @@
+[
+  {
+    "softwareId": "logic",
+    "price": 99.99,
+    "date": "2025-07-02T15:42:40.214Z"
+  },
+  {
+    "softwareId": "flstudio",
+    "price": 100,
+    "date": "2025-07-02T16:01:08.444Z"
+  },
+  {
+    "softwareId": "garageband",
+    "price": 100,
+    "date": "2025-07-02T16:24:10.692Z"
+  },
+  {
+    "softwareId": "protools",
+    "price": 100,
+    "date": "2025-07-02T16:24:37.882Z"
+  },
+  {
+    "softwareId": "protools",
+    "price": 100,
+    "date": "2025-07-02T16:24:44.986Z"
+  },
+  {
+    "softwareId": "flstudio",
+    "price": 0,
+    "date": "2025-07-02T16:30:12.317Z"
+  }
+]

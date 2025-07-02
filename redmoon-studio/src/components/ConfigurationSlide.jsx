@@ -69,11 +69,25 @@ function ConfigurationSlide({ isOpen, onClose }) {
         }
     };
 
-    const handlePayment = () => {
+    const handlePayment = async () => {
+        const softwareId = selectedSoftware;
+        // Correction : détecter le prix selon l'option sélectionnée
+        const price = selectedOption === 'full' ? 100 : 0;
+        try {
+            await fetch('http://localhost:3001/api/shopify/order', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ softwareId, price }),
+            });
+        } catch (error) {
+            console.error('Erreur lors de l\'envoi de la commande :', error);
+        }
+        // Redirection Shopify (optionnel)
         const shopifyUrl = selectedOption === 'full'
             ? 'https://votre-boutique.myshopify.com/cart/add?id=PRODUCT_ID_100EUR'
             : 'https://votre-boutique.myshopify.com/cart/add?id=PRODUCT_ID_GRATUIT';
-
         window.open(shopifyUrl, '_blank');
     };
 

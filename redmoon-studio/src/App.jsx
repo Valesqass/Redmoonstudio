@@ -26,7 +26,6 @@ function App() {
       {/* Section Retours clients à la fin du site */}
       <CustomerReviews />
       <TrustpilotSection />
-      <Sub />
     </div>
   );
 }
