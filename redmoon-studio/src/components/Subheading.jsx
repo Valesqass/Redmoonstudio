@@ -33,7 +33,7 @@ function Subheading() {
                 <div className="text-red-500 text-sm font-medium mb-3 tracking-wider uppercase animate-pulse">
                     Solmixing
                 </div>
-                <h2 className="text-white text-xl sm:text-2xl lg:text-4xl xl:text-5xl font-bold mb-4 bg-gradient-to-r from-white to-gray-300 bg-clip-text">
+                <h2 className="text-white text-xl sm:text-2xl lg:text-4xl xl:text-5xl font-extrabold mb-4 bg-gradient-to-r from-white to-gray-300 bg-clip-text">
                     Les 3 avantages principaux
                 </h2>
                 <p className="text-gray-400 text-sm sm:text-base max-w-xl mx-auto leading-relaxed px-4">
@@ -46,8 +46,8 @@ function Subheading() {
                 {advantages.map((advantage, index) => {
                     const IconComponent = advantage.icon;
                     return (
-                        <div 
-                            key={index} 
+                        <div
+                            key={index}
                             className="group relative bg-[#1a1a1a] border border-gray-800 rounded-xl p-6 cursor-pointer transform transition-all duration-500 ease-out hover:scale-105 hover:border-transparent hover:shadow-xl hover:shadow-red-500/20 hover:-translate-y-1"
                             style={{
                                 background: 'linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%)'
@@ -56,18 +56,18 @@ function Subheading() {
                             {/* Gradient Border Effect on Hover */}
                             <div className={`absolute inset-0 rounded-xl bg-gradient-to-r ${advantage.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10 blur-sm`}></div>
                             <div className="absolute inset-[1px] bg-[#1a1a1a] rounded-xl -z-10"></div>
-                            
+
                             {/* Animated Background Glow */}
                             <div className={`absolute inset-0 rounded-xl bg-gradient-to-r ${advantage.gradient} opacity-0 group-hover:opacity-10 transition-all duration-700 ease-out`}></div>
-                            
+
                             {/* Icon with Enhanced Animation */}
                             <div className={`relative w-12 h-12 bg-gradient-to-r ${advantage.gradient} rounded-lg flex items-center justify-center mb-4 transform transition-all duration-500 group-hover:scale-110 group-hover:rotate-6 shadow-lg`}>
                                 <IconComponent className="w-6 h-6 text-white transform transition-transform duration-300 group-hover:scale-110" />
-                                
+
                                 {/* Pulsing Ring Effect */}
                                 <div className={`absolute inset-0 rounded-lg bg-gradient-to-r ${advantage.gradient} opacity-0 group-hover:opacity-30 animate-ping`}></div>
                             </div>
-                            
+
                             {/* Content with Staggered Animation */}
                             <h3 className="text-white text-lg font-bold mb-3 transform transition-all duration-300 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:bg-clip-text group-hover:from-white group-hover:to-gray-300">
                                 {advantage.title}
@@ -75,7 +75,7 @@ function Subheading() {
                             <p className="text-gray-400 text-sm mb-6 leading-relaxed transform transition-all duration-300 group-hover:text-gray-300">
                                 {advantage.description}
                             </p>
-                            
+
                             {/* Enhanced Interactive Button */}
                             <div className="flex items-center justify-between">
                                 <button className={`relative overflow-hidden px-4 py-2 bg-gradient-to-r ${advantage.gradient} text-white font-semibold rounded-lg transform transition-all duration-300 group-hover:scale-105 group-hover:shadow-lg hover:shadow-xl text-sm`}>
@@ -83,27 +83,27 @@ function Subheading() {
                                         {advantage.buttonText}
                                         <FiArrowRight className="w-3 h-3 transform transition-transform duration-300 group-hover:translate-x-1" />
                                     </span>
-                                    
+
                                     {/* Button Shine Effect */}
                                     <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-out"></div>
                                 </button>
-                                
+
                                 {/* Floating Arrow */}
                                 <div className="transform transition-all duration-500 opacity-0 group-hover:opacity-100 group-hover:translate-x-2">
                                     <FiArrowRight className={`w-5 h-5 text-transparent bg-gradient-to-r ${advantage.gradient} bg-clip-text`} />
                                 </div>
                             </div>
-                            
+
                             {/* Corner Accent */}
                             <div className={`absolute top-3 right-3 w-1.5 h-1.5 bg-gradient-to-r ${advantage.gradient} rounded-full opacity-0 group-hover:opacity-100 transition-all duration-500 transform scale-0 group-hover:scale-100`}></div>
-                            
+
                             {/* Bottom Glow Line */}
                             <div className={`absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r ${advantage.gradient} transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 rounded-b-xl`}></div>
                         </div>
                     );
                 })}
             </div>
-            
+
             {/* Floating Particles Background */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
                 {[...Array(15)].map((_, i) => (

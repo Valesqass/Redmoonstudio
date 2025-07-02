@@ -3,7 +3,8 @@ import Hero from "./components/Hero";
 import Vocalmix from './components/Vocalmix';
 import Sub from './components/Subheading';
 import Ask from './components/Ask';
-// import Customer from './components/Customer';
+import CustomerReviews from './components/CustomerReviews';
+import TrustpilotSection from './components/TrustpilotSection';
 
 function App() {
   return (
@@ -19,9 +20,13 @@ function App() {
         </div>
       </div>
 
-      {/* Sub maintenant à l'extérieur du div principal, tout en bas */}
+      {/* Sub maintenant à l'extérieur du div principal */}
       <Sub />
-      {/* <Customer /> */}
+
+      {/* Section Retours clients à la fin du site */}
+      <CustomerReviews />
+      <TrustpilotSection />
+      <Sub />
     </div>
   );
 }
