@@ -19,13 +19,10 @@ function App() {
           </div>
         </div>
       </div>
-
-      {/* Sub maintenant à l'extérieur du div principal */}
       <Sub />
-
-      {/* Section Retours clients à la fin du site */}
-      <CustomerReviews />
       <TrustpilotSection />
+      <CustomerReviews />
+
     </div>
   );
 }

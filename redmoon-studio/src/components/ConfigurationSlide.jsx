@@ -1,5 +1,11 @@
 import { useState } from 'react';
 import { FiX, FiChevronDown, FiCheck, FiArrowRight } from 'react-icons/fi';
+import protoolsImg from '../assets/img/protools.png';
+import logicproImg from '../assets/img/logicpro.png';
+import flImg from '../assets/img/fl.png';
+import abletonImg from '../assets/img/ableton.png';
+import garagebrandImg from '../assets/img/garagebrand.png';
+import reaperImg from '../assets/img/reaper.png';
 
 function ConfigurationSlide({ isOpen, onClose }) {
     const [currentStep, setCurrentStep] = useState(1);
@@ -10,12 +16,12 @@ function ConfigurationSlide({ isOpen, onClose }) {
     const totalSteps = 3;
 
     const musicSoftware = [
-        { id: 'protools', name: 'Pro Tools', bgColor: 'bg-purple-600', icon: '🎚️', description: 'Standard industrie' },
-        { id: 'logic', name: 'Logic Pro', bgColor: 'bg-gray-600', icon: '◐', description: 'Apple exclusif' },
-        { id: 'flstudio', name: 'FL Studio', bgColor: 'bg-orange-500', icon: '🍊', description: 'Beatmaking' },
-        { id: 'ableton', name: 'Ableton Live', bgColor: 'bg-gray-700', icon: '▣', description: 'Performance live' },
-        { id: 'garageband', name: 'Garage Band', bgColor: 'bg-orange-500', icon: '🎸', description: 'Débutant friendly' },
-        { id: 'reaper', name: 'Reaper', bgColor: 'bg-green-600', icon: '🎵', description: 'Léger et puissant' }
+        { id: 'protools', name: 'Pro Tools', bgColor: 'bg-purple-600', icon: '🎚️', description: 'Standard industrie', image: protoolsImg },
+        { id: 'logic', name: 'Logic Pro', bgColor: 'bg-gray-600', icon: '◐', description: 'Apple exclusif', image: logicproImg },
+        { id: 'flstudio', name: 'FL Studio', bgColor: 'bg-orange-500', icon: '🍊', description: 'Beatmaking', image: flImg },
+        { id: 'ableton', name: 'Ableton Live', bgColor: 'bg-gray-700', icon: '▣', description: 'Performance live', image: abletonImg },
+        { id: 'garageband', name: 'Garage Band', bgColor: 'bg-orange-500', icon: '🎸', description: 'Débutant friendly', image: garagebrandImg },
+        { id: 'reaper', name: 'Reaper', bgColor: 'bg-green-600', icon: '🎵', description: 'Léger et puissant', image: reaperImg }
     ];
 
     const serviceOptions = [
@@ -173,9 +179,12 @@ function ConfigurationSlide({ isOpen, onClose }) {
                                         )}
 
                                         {/* Logo avec animation */}
-                                        <div className={`w-12 h-12 rounded-xl ${software.bgColor} flex items-center justify-center mb-4 mx-auto transition-all duration-300 group-hover:scale-110 ${selectedSoftware === software.id ? 'scale-110 shadow-lg' : ''
-                                            }`}>
-                                            <span className="text-white font-bold text-xl">{software.icon}</span>
+                                        <div className={`w-12 h-12 rounded-xl ${software.bgColor} flex items-center justify-center mb-4 mx-auto transition-all duration-300 group-hover:scale-110 ${selectedSoftware === software.id ? 'scale-110 shadow-lg' : ''}`}>
+                                            {software.image ? (
+                                                <img src={software.image} alt={software.name} className="w-10 h-10 object-contain" />
+                                            ) : (
+                                                <span className="text-white font-bold text-xl">{software.icon}</span>
+                                            )}
                                         </div>
 
                                         <div className="text-center">
