@@ -39,11 +39,11 @@ function Hero() {
             <div className="flex flex-col lg:flex-row items-center justify-center w-full max-w-7xl gap-8 lg:gap-12">
 
                 {/* Left Image - Responsive */}
-                <div className="flex justify-center w-full lg:w-1/2 mb-6 lg:mb-0">
+                <div className="flex justify-center items-center w-full lg:w-1/2 mb-6 lg:mb-0">
                     <img
                         src={VocalMix}
                         alt="Vocal Mix Kit"
-                        className={`w-64 sm:w-80 md:w-96 lg:w-full max-w-md rounded-xl shadow-xl transition-transform duration-300 ease-out ${isHovered ? 'scale-[1.06] -rotate-2' : ''
+                        className={`mx-auto my-auto w-64 sm:w-80 md:w-96 lg:w-[32rem] max-w-full rounded-xl shadow-xl transition-transform duration-300 ease-out ${isHovered ? 'scale-[1.06] -rotate-2' : ''
                             }`}
                         onMouseEnter={() => setIsHovered(true)}
                         onMouseLeave={() => setIsHovered(false)}

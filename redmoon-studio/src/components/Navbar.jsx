@@ -5,7 +5,7 @@ import { FaDrum, FaShoppingCart } from 'react-icons/fa';
 import { HiOutlinePhone } from 'react-icons/hi';
 import Logo from '../assets/img/logo.png';
 
-function Navbar() {
+function Navbar({ setCartOpen }) {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
 
@@ -125,7 +125,7 @@ function Navbar() {
                     </div>
                 </div>
             </nav>
-            {/* Spacer for fixed navbar */}
+
             <div className="h-16 lg:h-20"></div>
         </>
     );

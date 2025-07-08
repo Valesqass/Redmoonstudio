@@ -5,6 +5,7 @@ import Sub from './components/Subheading';
 import Ask from './components/Ask';
 import CustomerReviews from './components/CustomerReviews';
 import TrustpilotSection from './components/TrustpilotSection';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Sub />
       <TrustpilotSection />
       <CustomerReviews />
+      <Footer />
 
     </div>
   );

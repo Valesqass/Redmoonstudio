@@ -93,21 +93,7 @@ function CustomerReviews() {
                 </div>
 
                 <div className="relative">
-                    <button
-                        onClick={prevSlide}
-                        className="hidden md:flex absolute left-2 top-1/2 -translate-y-1/2 z-20 w-8 h-8 bg-black/90 backdrop-blur-md border border-gray-700 rounded-full items-center justify-center text-white hover:bg-red-600 hover:border-red-600 transition-all duration-300 hover:scale-110"
-                        aria-label="Précédent"
-                    >
-                        <FiChevronLeft size={18} />
-                    </button>
 
-                    <button
-                        onClick={nextSlide}
-                        className="hidden md:flex absolute right-2 top-1/2 -translate-y-1/2 z-20 w-8 h-8 bg-black/90 backdrop-blur-md border border-gray-700 rounded-full items-center justify-center text-white hover:bg-red-600 hover:border-red-600 transition-all duration-300 hover:scale-110"
-                        aria-label="Suivant"
-                    >
-                        <FiChevronRight size={18} />
-                    </button>
 
                     <div
                         ref={carouselRef}

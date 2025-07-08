@@ -109,12 +109,12 @@ function ConfigurationSlide({ isOpen, onClose }) {
 
     return (
         <div className="fixed inset-0 z-50 overflow-hidden">
-            {/* Overlay avec blur */}
+
             <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" onClick={onClose}></div>
 
-            {/* Slide Panel */}
+
             <div className="absolute right-0 top-0 h-full w-full max-w-lg bg-[#0a0a0a] shadow-2xl transform transition-all duration-500 ease-out border-l border-gray-800 flex flex-col">
-                {/* Header moderne */}
+                {/* Header */}
                 <div className="relative p-6 border-b border-gray-800/50 bg-gradient-to-r from-gray-900/50 to-gray-800/30">
                     <div className="flex items-center justify-between">
                         <div>
@@ -132,7 +132,7 @@ function ConfigurationSlide({ isOpen, onClose }) {
                         </button>
                     </div>
 
-                    {/* Progress indicator moderne */}
+                    {/* Progress indicator */}
                     <div className="mt-6">
                         <div className="flex justify-between text-sm text-gray-400 mb-3">
                             <span className="font-medium">Étape {currentStep} sur {totalSteps}</span>
@@ -199,7 +199,7 @@ function ConfigurationSlide({ isOpen, onClose }) {
                                 ))}
                             </div>
 
-                            {/* Bouton moderne */}
+                            {/* Bouton */}
                             <button
                                 onClick={nextStep}
                                 disabled={!selectedSoftware}
@@ -213,7 +213,7 @@ function ConfigurationSlide({ isOpen, onClose }) {
                                     }`} size={18} />
                             </button>
 
-                            {/* FAQ moderne */}
+                            {/* FAQ  */}
                             <div className="space-y-4">
                                 <h4 className="text-lg font-semibold text-white">
                                     Questions fréquentes
@@ -245,7 +245,7 @@ function ConfigurationSlide({ isOpen, onClose }) {
                                 </div>
                             </div>
 
-                            {/* Section contact moderne */}
+                            {/* Section contact */}
                             <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 rounded-xl p-6 text-center border border-gray-700/50">
                                 <div className="flex justify-center mb-4">
                                     <div className="relative">
